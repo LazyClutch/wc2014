@@ -36,6 +36,7 @@
 		6336719C192CDC8F0086EE9E /* WCMatchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6336719B192CDC8F0086EE9E /* WCMatchView.xib */; };
 		633E89991941BB0C00B9FDCE /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 633E89961941BB0C00B9FDCE /* ProgressHUD.bundle */; };
 		633E899A1941BB0C00B9FDCE /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 633E89981941BB0C00B9FDCE /* ProgressHUD.m */; };
+		633E89A01941D15900B9FDCE /* wc_start.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 633E899F1941D15900B9FDCE /* wc_start.jpg */; };
 		639DFBA9193484420070F418 /* WCDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 639DFBA8193484420070F418 /* WCDataCenter.m */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		633E89961941BB0C00B9FDCE /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		633E89971941BB0C00B9FDCE /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		633E89981941BB0C00B9FDCE /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		633E899F1941D15900B9FDCE /* wc_start.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wc_start.jpg; sourceTree = "<group>"; };
 		639DFBA7193484420070F418 /* WCDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCDataCenter.h; sourceTree = "<group>"; };
 		639DFBA8193484420070F418 /* WCDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCDataCenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,7 +174,6 @@
 				6336716C192CD8640086EE9E /* ViewController.m */,
 				639DFBA7193484420070F418 /* WCDataCenter.h */,
 				639DFBA8193484420070F418 /* WCDataCenter.m */,
-				630CA96A1933E16C0029491E /* wcschedule.plist */,
 				6336716E192CD8640086EE9E /* Images.xcassets */,
 				6336715D192CD8640086EE9E /* Supporting Files */,
 			);
@@ -182,7 +183,9 @@
 		6336715D192CD8640086EE9E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				633E899E1941BCDB00B9FDCE /* Images */,
 				6336715E192CD8640086EE9E /* wc2014-Info.plist */,
+				630CA96A1933E16C0029491E /* wcschedule.plist */,
 				6336715F192CD8640086EE9E /* InfoPlist.strings */,
 				63367162192CD8640086EE9E /* main.m */,
 				63367164192CD8640086EE9E /* wc2014-Prefix.pch */,
@@ -256,6 +259,14 @@
 				633E89951941BB0C00B9FDCE /* ProgressHUD */,
 			);
 			name = Library;
+			sourceTree = "<group>";
+		};
+		633E899E1941BCDB00B9FDCE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				633E899F1941D15900B9FDCE /* wc_start.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +355,7 @@
 				6336716A192CD8640086EE9E /* Main.storyboard in Resources */,
 				633E89991941BB0C00B9FDCE /* ProgressHUD.bundle in Resources */,
 				6336718F192CDAA60086EE9E /* WCNewsViewController.xib in Resources */,
+				633E89A01941D15900B9FDCE /* wc_start.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

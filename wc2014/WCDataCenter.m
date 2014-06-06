@@ -23,4 +23,9 @@ WCDataCenter *sharedCenter = nil;
     return [self.schedule objectAtIndex:number];
 }
 
+- (NSString *)identifierWithNumber:(NSInteger)number{
+    NSString *numberStr = [NSString stringWithFormat:@"%d",number];
+    return [self.savedEventId objectForKey:numberStr];
+}
+
 @end

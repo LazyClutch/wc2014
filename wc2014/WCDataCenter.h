@@ -10,8 +10,9 @@
 
 @interface WCDataCenter : NSObject
 
-@property (nonatomic, strong) NSArray *schedule;
-@property (nonatomic, strong) NSArray *news;
+@property (nonatomic, strong) NSMutableArray *schedule;
+@property (nonatomic, strong) NSMutableArray *news;
+@property (nonatomic, strong) NSMutableDictionary *savedEventId;
 
 + (WCDataCenter *)sharedCenter;
 
