@@ -1,0 +1,85 @@
+//
+//  WCCalendarViewController.m
+//  wc2014
+//
+//  Created by lazy on 5/21/14.
+//  Copyright (c) 2014 lazy. All rights reserved.
+//
+
+#import "WCCalendarViewController.h"
+#import "WCMatchView.h"
+#import "WCDataCenter.h"
+#define VIEW_UNIT 256
+
+@interface WCCalendarViewController ()
+
+@property (nonatomic,strong) WCMatchView *matchView;
+
+@end
+
+@implementation WCCalendarViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.matchView = [[[NSBundle mainBundle] loadNibNamed:@"WCMatchView" owner:self options:nil] objectAtIndex:0];
+    [self.matchView setFrame:CGRectMake(256, 0, 768, 768)];
+    [self.view addSubview:self.matchView];
+    [self.matchView initView];
+    //load plist
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"wcschedule" ofType:@"plist"];
+    NSArray *schedule = [NSArray arrayWithContentsOfFile:plistPath];
+    [[WCDataCenter sharedCenter] setSchedule:schedule];
+    [self.tableView reloadData];
+    
+    // Do any additional setup after loading the view from its nib.
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)returnBtnPressed:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark UITableView Methods
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [[[WCDataCenter sharedCenter] schedule] count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *identifier = @"CellIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    NSDictionary *match = [[WCDataCenter sharedCenter] matchInfoAtNumber:[indexPath row]];
+    NSString *home = [match objectForKey:@"home"];
+    NSString *away = [match objectForKey:@"away"];
+    NSString *content = [NSString stringWithFormat:@"%@ VS %@",home,away];
+    cell.textLabel.text = content;
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSDictionary *match = [[WCDataCenter sharedCenter] matchInfoAtNumber:[indexPath row]];
+    [self.matchView setMatchView:match];
+}
+
+@end

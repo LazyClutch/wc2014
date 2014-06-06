@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630CA96B1933E16C0029491E /* wcschedule.plist in Resources */ = {isa = PBXBuildFile; fileRef = 630CA96A1933E16C0029491E /* wcschedule.plist */; };
+		630CA96F1933EA3D0029491E /* WCNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630CA96D1933EA3D0029491E /* WCNewsDetailViewController.m */; };
+		630CA9701933EA3D0029491E /* WCNewsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630CA96E1933EA3D0029491E /* WCNewsDetailViewController.xib */; };
+		6322560F193A8033006245B3 /* RTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6322560E193A8033006245B3 /* RTLabel.m */; };
+		63225614193A813C006245B3 /* WCNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63225612193A813C006245B3 /* WCNewsCell.m */; };
+		63225615193A813C006245B3 /* WCNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63225613193A813C006245B3 /* WCNewsCell.xib */; };
 		63367157192CD8630086EE9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63367156192CD8630086EE9E /* Foundation.framework */; };
 		63367159192CD8640086EE9E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63367158192CD8630086EE9E /* CoreGraphics.framework */; };
 		6336715B192CD8640086EE9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6336715A192CD8640086EE9E /* UIKit.framework */; };
@@ -21,6 +27,16 @@
 		63367178192CD8640086EE9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6336715A192CD8640086EE9E /* UIKit.framework */; };
 		63367180192CD8640086EE9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6336717E192CD8640086EE9E /* InfoPlist.strings */; };
 		63367182192CD8640086EE9E /* wc2014Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63367181192CD8640086EE9E /* wc2014Tests.m */; };
+		6336718E192CDAA60086EE9E /* WCNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6336718C192CDAA60086EE9E /* WCNewsViewController.m */; };
+		6336718F192CDAA60086EE9E /* WCNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6336718D192CDAA60086EE9E /* WCNewsViewController.xib */; };
+		63367192192CDB340086EE9E /* WCNewsFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 63367191192CDB340086EE9E /* WCNewsFetcher.m */; };
+		63367196192CDB7F0086EE9E /* WCCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63367194192CDB7F0086EE9E /* WCCalendarViewController.m */; };
+		63367197192CDB7F0086EE9E /* WCCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63367195192CDB7F0086EE9E /* WCCalendarViewController.xib */; };
+		6336719A192CDC640086EE9E /* WCMatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63367199192CDC640086EE9E /* WCMatchView.m */; };
+		6336719C192CDC8F0086EE9E /* WCMatchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6336719B192CDC8F0086EE9E /* WCMatchView.xib */; };
+		633E89991941BB0C00B9FDCE /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 633E89961941BB0C00B9FDCE /* ProgressHUD.bundle */; };
+		633E899A1941BB0C00B9FDCE /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 633E89981941BB0C00B9FDCE /* ProgressHUD.m */; };
+		639DFBA9193484420070F418 /* WCDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 639DFBA8193484420070F418 /* WCDataCenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +50,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		630CA96A1933E16C0029491E /* wcschedule.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = wcschedule.plist; sourceTree = "<group>"; };
+		630CA96C1933EA3D0029491E /* WCNewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCNewsDetailViewController.h; sourceTree = "<group>"; };
+		630CA96D1933EA3D0029491E /* WCNewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCNewsDetailViewController.m; sourceTree = "<group>"; };
+		630CA96E1933EA3D0029491E /* WCNewsDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCNewsDetailViewController.xib; sourceTree = "<group>"; };
+		6322560D193A8033006245B3 /* RTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLabel.h; sourceTree = "<group>"; };
+		6322560E193A8033006245B3 /* RTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLabel.m; sourceTree = "<group>"; };
+		63225611193A813C006245B3 /* WCNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCNewsCell.h; sourceTree = "<group>"; };
+		63225612193A813C006245B3 /* WCNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCNewsCell.m; sourceTree = "<group>"; };
+		63225613193A813C006245B3 /* WCNewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCNewsCell.xib; sourceTree = "<group>"; };
 		63367153192CD8630086EE9E /* wc2014.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wc2014.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63367156192CD8630086EE9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63367158192CD8630086EE9E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +78,22 @@
 		6336717D192CD8640086EE9E /* wc2014Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wc2014Tests-Info.plist"; sourceTree = "<group>"; };
 		6336717F192CD8640086EE9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63367181192CD8640086EE9E /* wc2014Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wc2014Tests.m; sourceTree = "<group>"; };
+		6336718B192CDAA60086EE9E /* WCNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCNewsViewController.h; sourceTree = "<group>"; };
+		6336718C192CDAA60086EE9E /* WCNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCNewsViewController.m; sourceTree = "<group>"; };
+		6336718D192CDAA60086EE9E /* WCNewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCNewsViewController.xib; sourceTree = "<group>"; };
+		63367190192CDB340086EE9E /* WCNewsFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCNewsFetcher.h; sourceTree = "<group>"; };
+		63367191192CDB340086EE9E /* WCNewsFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCNewsFetcher.m; sourceTree = "<group>"; };
+		63367193192CDB7F0086EE9E /* WCCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCalendarViewController.h; sourceTree = "<group>"; };
+		63367194192CDB7F0086EE9E /* WCCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCalendarViewController.m; sourceTree = "<group>"; };
+		63367195192CDB7F0086EE9E /* WCCalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCCalendarViewController.xib; sourceTree = "<group>"; };
+		63367198192CDC640086EE9E /* WCMatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCMatchView.h; sourceTree = "<group>"; };
+		63367199192CDC640086EE9E /* WCMatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCMatchView.m; sourceTree = "<group>"; };
+		6336719B192CDC8F0086EE9E /* WCMatchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCMatchView.xib; sourceTree = "<group>"; };
+		633E89961941BB0C00B9FDCE /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		633E89971941BB0C00B9FDCE /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		633E89981941BB0C00B9FDCE /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		639DFBA7193484420070F418 /* WCDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCDataCenter.h; sourceTree = "<group>"; };
+		639DFBA8193484420070F418 /* WCDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCDataCenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +120,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63225610193A8043006245B3 /* RTLabel */ = {
+			isa = PBXGroup;
+			children = (
+				6322560D193A8033006245B3 /* RTLabel.h */,
+				6322560E193A8033006245B3 /* RTLabel.m */,
+			);
+			name = RTLabel;
+			sourceTree = "<group>";
+		};
 		6336714A192CD8630086EE9E = {
 			isa = PBXGroup;
 			children = (
@@ -112,11 +162,17 @@
 		6336715C192CD8640086EE9E /* wc2014 */ = {
 			isa = PBXGroup;
 			children = (
+				633E899B1941BB0F00B9FDCE /* Library */,
+				633E89941941B98100B9FDCE /* Calendar */,
+				633E89931941B97B00B9FDCE /* News */,
 				63367165192CD8640086EE9E /* AppDelegate.h */,
 				63367166192CD8640086EE9E /* AppDelegate.m */,
 				63367168192CD8640086EE9E /* Main.storyboard */,
 				6336716B192CD8640086EE9E /* ViewController.h */,
 				6336716C192CD8640086EE9E /* ViewController.m */,
+				639DFBA7193484420070F418 /* WCDataCenter.h */,
+				639DFBA8193484420070F418 /* WCDataCenter.m */,
+				630CA96A1933E16C0029491E /* wcschedule.plist */,
 				6336716E192CD8640086EE9E /* Images.xcassets */,
 				6336715D192CD8640086EE9E /* Supporting Files */,
 			);
@@ -150,6 +206,56 @@
 				6336717E192CD8640086EE9E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		633E89931941B97B00B9FDCE /* News */ = {
+			isa = PBXGroup;
+			children = (
+				63367190192CDB340086EE9E /* WCNewsFetcher.h */,
+				63367191192CDB340086EE9E /* WCNewsFetcher.m */,
+				6336718B192CDAA60086EE9E /* WCNewsViewController.h */,
+				6336718C192CDAA60086EE9E /* WCNewsViewController.m */,
+				6336718D192CDAA60086EE9E /* WCNewsViewController.xib */,
+				63225611193A813C006245B3 /* WCNewsCell.h */,
+				63225612193A813C006245B3 /* WCNewsCell.m */,
+				63225613193A813C006245B3 /* WCNewsCell.xib */,
+				630CA96C1933EA3D0029491E /* WCNewsDetailViewController.h */,
+				630CA96D1933EA3D0029491E /* WCNewsDetailViewController.m */,
+				630CA96E1933EA3D0029491E /* WCNewsDetailViewController.xib */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		633E89941941B98100B9FDCE /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				63367198192CDC640086EE9E /* WCMatchView.h */,
+				63367199192CDC640086EE9E /* WCMatchView.m */,
+				6336719B192CDC8F0086EE9E /* WCMatchView.xib */,
+				63367193192CDB7F0086EE9E /* WCCalendarViewController.h */,
+				63367194192CDB7F0086EE9E /* WCCalendarViewController.m */,
+				63367195192CDB7F0086EE9E /* WCCalendarViewController.xib */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		633E89951941BB0C00B9FDCE /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				633E89961941BB0C00B9FDCE /* ProgressHUD.bundle */,
+				633E89971941BB0C00B9FDCE /* ProgressHUD.h */,
+				633E89981941BB0C00B9FDCE /* ProgressHUD.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		633E899B1941BB0F00B9FDCE /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				63225610193A8043006245B3 /* RTLabel */,
+				633E89951941BB0C00B9FDCE /* ProgressHUD */,
+			);
+			name = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +334,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630CA9701933EA3D0029491E /* WCNewsDetailViewController.xib in Resources */,
+				6336719C192CDC8F0086EE9E /* WCMatchView.xib in Resources */,
+				630CA96B1933E16C0029491E /* wcschedule.plist in Resources */,
 				6336716F192CD8640086EE9E /* Images.xcassets in Resources */,
 				63367161192CD8640086EE9E /* InfoPlist.strings in Resources */,
+				63367197192CDB7F0086EE9E /* WCCalendarViewController.xib in Resources */,
+				63225615193A813C006245B3 /* WCNewsCell.xib in Resources */,
 				6336716A192CD8640086EE9E /* Main.storyboard in Resources */,
+				633E89991941BB0C00B9FDCE /* ProgressHUD.bundle in Resources */,
+				6336718F192CDAA60086EE9E /* WCNewsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +362,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6322560F193A8033006245B3 /* RTLabel.m in Sources */,
+				630CA96F1933EA3D0029491E /* WCNewsDetailViewController.m in Sources */,
+				63367196192CDB7F0086EE9E /* WCCalendarViewController.m in Sources */,
 				6336716D192CD8640086EE9E /* ViewController.m in Sources */,
 				63367167192CD8640086EE9E /* AppDelegate.m in Sources */,
 				63367163192CD8640086EE9E /* main.m in Sources */,
+				633E899A1941BB0C00B9FDCE /* ProgressHUD.m in Sources */,
+				63367192192CDB340086EE9E /* WCNewsFetcher.m in Sources */,
+				6336719A192CDC640086EE9E /* WCMatchView.m in Sources */,
+				639DFBA9193484420070F418 /* WCDataCenter.m in Sources */,
+				63225614193A813C006245B3 /* WCNewsCell.m in Sources */,
+				6336718E192CDAA60086EE9E /* WCNewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +580,7 @@
 				63367187192CD8640086EE9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63367188192CD8640086EE9E /* Build configuration list for PBXNativeTarget "wc2014Tests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +589,7 @@
 				6336718A192CD8640086EE9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

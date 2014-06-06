@@ -10,4 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIImageView *logoView;
+@property (strong, nonatomic) IBOutlet UIButton *newsBtn;
+@property (strong, nonatomic) IBOutlet UIButton *calendarBtn;
+
+- (IBAction)newsBtnPressed:(id)sender;
+- (IBAction)calendarBtnPressed:(id)sender;
+
 @end
