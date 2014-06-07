@@ -7,8 +7,11 @@
 //
 
 #import "WCNewsDetailViewController.h"
+#import "ProgressHUD.h"
 
-@interface WCNewsDetailViewController ()
+@interface WCNewsDetailViewController (){
+    BOOL isLoadSucceed;
+}
 
 @end
 
@@ -29,6 +32,10 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    isLoadSucceed = NO;
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -42,7 +49,10 @@
 }
 
 - (void)loadNews:(NSString *)newslink{
-    NSString *news = [NSString stringWithFormat:@"http://www.fifa.com/%@",newslink];
+    if (!isLoadSucceed) {
+        [ProgressHUD show:@"Loading news..."];
+    }
+    NSString *news = [NSString stringWithFormat:@"%@",newslink];
     NSURL *url = [NSURL URLWithString:news];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
     [self.webView loadRequest:request];
@@ -53,5 +63,12 @@
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"错误" message:@"连接失败，请检查网络" delegate:self cancelButtonTitle:@"好" otherButtonTitles: nil];
     [alert show];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    if (!isLoadSucceed) {
+        [ProgressHUD showSuccess:@"Loading finished!"];
+        isLoadSucceed = YES;
+    }
 }
 @end

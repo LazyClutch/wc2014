@@ -12,6 +12,7 @@
 #import "WCDataCenter.h"
 #import "WCNewsCell.h"
 #import "RTLabel.h"
+#import "ProgressHUD.h"
 
 @interface WCNewsViewController (){
     NSArray *newsList;
@@ -43,10 +44,13 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    [ProgressHUD show:@"Loading news..."];
     self.newsFetcher = [[WCNewsFetcher alloc] init];
     [self.newsFetcher fetchNews];
+    [ProgressHUD showSuccess:@"Loading finished!"];
     newsList = [[WCDataCenter sharedCenter] news];
     [self.tableView reloadData];
+    
     nibRegistered = NO;
 }
 
