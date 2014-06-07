@@ -9,10 +9,13 @@
 #import "WCMatchView.h"
 #import <EventKit/EventKit.h>
 #import <EventKitUI/EventKitUI.h>
+#import <Social/Social.h>
 
 @interface WCMatchView(){
     BOOL hasEvent;
     NSString *identifier;
+    SLComposeViewController *composeViewController;
+    NSString *sharedText;
 }
 
 @end
@@ -31,6 +34,8 @@
 - (void)initView{
     self.VSLabel.hidden = YES;
     self.addCalendarBtn.hidden = YES;
+    self.weiboSharedBtn.hidden = YES;
+    composeViewController = [[SLComposeViewController alloc] init];
 }
 
 - (void)setMatchView:(NSDictionary *)matchInfo{
@@ -43,6 +48,7 @@
         NSString *away = [matchInfo objectForKey:@"away"];
         NSString *location = [matchInfo objectForKey:@"location"];
         NSString *time = [matchInfo objectForKey:@"time"];
+        sharedText = [NSString stringWithFormat:@"北京时间%@,欢迎收看%@vs%@",time,home,away];
         self.matchNo.text = no;
         self.matchPlaceLabel.text = location;
         self.matchTimeLabel.text = time;
@@ -64,6 +70,7 @@
         }
         self.VSLabel.hidden = NO;
         self.addCalendarBtn.hidden = NO;
+        self.weiboSharedBtn.hidden = NO;
         
         identifier = [[NSUserDefaults standardUserDefaults] stringForKey:no];
         if (identifier == nil) {
@@ -88,7 +95,6 @@
     NSDate *startDate = date;
     NSDate *endDate = [date dateByAddingTimeInterval:120 * 60];
     NSString *name = [NSString stringWithFormat:@"%@ VS %@",home,away];
-    
     if (hasEvent) {
         EKEvent *event = [store eventWithIdentifier:identifier];
         if (event != nil) {
@@ -142,6 +148,45 @@
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Complete!" message:@"已将赛程导入日历中" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [alert show];
+    }
+}
+
+- (IBAction)weiboSharedBtnPressed:(id)sender {
+    if ([[[[UIDevice currentDevice] systemVersion] substringToIndex:1] intValue]>=6){
+        if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeSinaWeibo]) {
+            composeViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeSinaWeibo];
+            [composeViewController setInitialText:sharedText];
+            UIViewController *viewController;
+            for (UIView* next = [self superview]; next; next = next.superview) {
+                UIResponder *nextResponder = [next nextResponder];
+                if ([nextResponder isKindOfClass:[UIViewController class]]) {
+                    viewController = (UIViewController *)nextResponder;
+                }
+            }
+            [viewController presentViewController:composeViewController animated:YES completion:nil];
+            [composeViewController setCompletionHandler:^(SLComposeViewControllerResult result) {
+                NSLog(@"start completion block");
+                NSString *output;
+                switch (result) {
+                    case SLComposeViewControllerResultCancelled:
+                        output = @"已取消";
+                        break;
+                    case SLComposeViewControllerResultDone:
+                        output = @"发送成功";
+                        break;
+                    default:
+                        break;
+                }
+                if (result != SLComposeViewControllerResultCancelled)
+                {
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Weibo Message" message:output delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+                    [alert show];
+                }
+            }];
+
+        }
+    } else {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://weibo.com"]];
     }
 }
 

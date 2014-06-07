@@ -37,6 +37,7 @@
 		633E89991941BB0C00B9FDCE /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 633E89961941BB0C00B9FDCE /* ProgressHUD.bundle */; };
 		633E899A1941BB0C00B9FDCE /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 633E89981941BB0C00B9FDCE /* ProgressHUD.m */; };
 		633E89A01941D15900B9FDCE /* wc_start.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 633E899F1941D15900B9FDCE /* wc_start.jpg */; };
+		637CEE7D1943192C0072D175 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637CEE7C1943192C0072D175 /* Social.framework */; };
 		639DFBA9193484420070F418 /* WCDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 639DFBA8193484420070F418 /* WCDataCenter.m */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,7 @@
 		633E89971941BB0C00B9FDCE /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		633E89981941BB0C00B9FDCE /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		633E899F1941D15900B9FDCE /* wc_start.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wc_start.jpg; sourceTree = "<group>"; };
+		637CEE7C1943192C0072D175 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		639DFBA7193484420070F418 /* WCDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCDataCenter.h; sourceTree = "<group>"; };
 		639DFBA8193484420070F418 /* WCDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCDataCenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637CEE7D1943192C0072D175 /* Social.framework in Frameworks */,
 				63367159192CD8640086EE9E /* CoreGraphics.framework in Frameworks */,
 				6336715B192CD8640086EE9E /* UIKit.framework in Frameworks */,
 				63367157192CD8630086EE9E /* Foundation.framework in Frameworks */,
@@ -153,6 +156,7 @@
 		63367155192CD8630086EE9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				637CEE7C1943192C0072D175 /* Social.framework */,
 				63367156192CD8630086EE9E /* Foundation.framework */,
 				63367158192CD8630086EE9E /* CoreGraphics.framework */,
 				6336715A192CD8640086EE9E /* UIKit.framework */,

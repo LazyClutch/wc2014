@@ -104,7 +104,7 @@
         self.detailViewController = [[WCNewsDetailViewController alloc] init];
     }
     [self presentViewController:self.detailViewController animated:YES completion:^{
-        [self.detailViewController loadNews:newsLink];
+        [self.detailViewController loadNews:newsLink withDetail:dict];
     }];
 }
 

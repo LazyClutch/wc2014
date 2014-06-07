@@ -11,8 +11,10 @@
 @interface WCNewsDetailViewController : UIViewController<UIWebViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
+@property (strong, nonatomic) IBOutlet UIButton *weiboSharedBtn;
 
 - (IBAction)returnBtnPressed:(id)sender;
-- (void)loadNews:(NSString *)newslink;
+- (IBAction)weiboSharedBtnPressed:(id)sender;
+- (void)loadNews:(NSString *)newslink withDetail:(NSDictionary *)info;
 
 @end

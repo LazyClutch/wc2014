@@ -21,7 +21,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *matchTypeLabel;
 @property (strong, nonatomic) IBOutlet UILabel *VSLabel;
 @property (strong, nonatomic) NSDictionary *matchInfo;
+@property (strong, nonatomic) IBOutlet UIButton *weiboSharedBtn;
 
+- (IBAction)weiboSharedBtnPressed:(id)sender;
 - (void)initView;
 - (void)setMatchView:(NSDictionary *)matchInfo;
 - (IBAction)addCalendarPressed:(id)sender;

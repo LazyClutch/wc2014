@@ -8,9 +8,15 @@
 
 #import "WCNewsDetailViewController.h"
 #import "ProgressHUD.h"
+#import <Social/Social.h>
 
 @interface WCNewsDetailViewController (){
     BOOL isLoadSucceed;
+    SLComposeViewController *composeViewController;
+    
+    NSString *newsTitle;
+    UIImage *newsImage;
+    NSURL *link;
 }
 
 @end
@@ -48,7 +54,42 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)loadNews:(NSString *)newslink{
+- (IBAction)weiboSharedBtnPressed:(id)sender {
+    if ([[[[UIDevice currentDevice] systemVersion] substringToIndex:1] intValue]>=6){
+        if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeSinaWeibo]) {
+            composeViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeSinaWeibo];
+            [composeViewController setInitialText:newsTitle];
+            [composeViewController addImage:newsImage];
+            [composeViewController addURL:link];
+            [self presentViewController:composeViewController animated:YES completion:nil];
+            [composeViewController setCompletionHandler:^(SLComposeViewControllerResult result) {
+                NSLog(@"start completion block");
+                NSString *output;
+                switch (result) {
+                    case SLComposeViewControllerResultCancelled:
+                        output = @"已取消";
+                        break;
+                    case SLComposeViewControllerResultDone:
+                        output = @"发送成功";
+                        break;
+                    default:
+                        break;
+                }
+                if (result != SLComposeViewControllerResultCancelled)
+                {
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Weibo Message" message:output delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+                    [alert show];
+                }
+            }];
+            
+        }
+    } else {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://weibo.com"]];
+    }
+
+}
+
+- (void)loadNews:(NSString *)newslink withDetail:(NSDictionary *)info{
     if (!isLoadSucceed) {
         [ProgressHUD show:@"Loading news..."];
     }
@@ -56,6 +97,12 @@
     NSURL *url = [NSURL URLWithString:news];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
     [self.webView loadRequest:request];
+    
+    link = url;
+    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[info objectForKey:@"image"]]];
+    newsImage = [UIImage imageWithData:imageData];
+    newsTitle = [info objectForKey:@"title"];
+    
 }
 
 #pragma mark-
