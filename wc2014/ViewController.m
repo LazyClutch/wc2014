@@ -2,7 +2,7 @@
 //  ViewController.m
 //  wc2014
 //
-//  Created by lazy on 5/21/14.
+//  Created by lazy on 6/18/14.
 //  Copyright (c) 2014 lazy. All rights reserved.
 //
 
@@ -34,6 +34,7 @@
 - (IBAction)newsBtnPressed:(id)sender {
     if (self.newsViewController == nil){
         self.newsViewController = [[WCNewsViewController alloc] init];
+        [self.newsViewController setFirstLoad];
     }
     [self presentViewController:self.newsViewController animated:YES completion:nil];
 }

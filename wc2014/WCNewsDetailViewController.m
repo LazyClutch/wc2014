@@ -2,7 +2,7 @@
 //  WCNewsDetailViewController.m
 //  wc2014
 //
-//  Created by lazy on 5/26/14.
+//  Created by lazy on 6/18/14.
 //  Copyright (c) 2014 lazy. All rights reserved.
 //
 
@@ -107,10 +107,7 @@
 
 #pragma mark-
 #pragma mark UIWebView Delegate Methods
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"错误" message:@"连接失败，请检查网络" delegate:self cancelButtonTitle:@"好" otherButtonTitles: nil];
-    [alert show];
-}
+
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     if (!isLoadSucceed) {
@@ -118,4 +115,5 @@
         isLoadSucceed = YES;
     }
 }
+
 @end

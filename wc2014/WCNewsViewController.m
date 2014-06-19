@@ -2,7 +2,7 @@
 //  WCNewsViewController.m
 //  wc2014
 //
-//  Created by lazy on 5/21/14.
+//  Created by lazy on 6/18/14.
 //  Copyright (c) 2014 lazy. All rights reserved.
 //
 
@@ -13,14 +13,18 @@
 #import "WCNewsCell.h"
 #import "RTLabel.h"
 #import "ProgressHUD.h"
+#import "PullToRefreshView.h"
 
 @interface WCNewsViewController (){
     NSArray *newsList;
     BOOL nibRegistered;
+    PullToRefreshView *pull;
+    BOOL firstLoad;
 }
 
 @property (nonatomic, strong) WCNewsFetcher *newsFetcher;
 @property (nonatomic, strong) WCNewsDetailViewController *detailViewController;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 
 @end
 
@@ -38,20 +42,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    [ProgressHUD show:@"Loading news..."];
-    self.newsFetcher = [[WCNewsFetcher alloc] init];
-    [self.newsFetcher fetchNews];
-    [ProgressHUD showSuccess:@"Loading finished!"];
-    newsList = [[WCDataCenter sharedCenter] news];
-    [self.tableView reloadData];
-    
-    nibRegistered = NO;
+    if (firstLoad) {
+        [super viewDidAppear:animated];
+        self.newsFetcher = [[WCNewsFetcher alloc] init];
+        pull = [[PullToRefreshView alloc] initWithScrollView:self.tableView];
+        [pull setDelegate:self];
+        [self.tableView addSubview:pull];
+        [self processNews];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,7 +63,21 @@
 }
 
 - (IBAction)returnBtnPressed:(id)sender {
+    firstLoad = NO;
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)processNews{
+    [ProgressHUD show:@"Loading news..."];
+    [self.newsFetcher fetchNews];
+    [ProgressHUD showSuccess:@"Loading finished!"];
+    newsList = [[WCDataCenter sharedCenter] news];
+    [self.tableView reloadData];
+    [pull finishedLoading];
+    
+    
+    nibRegistered = NO;
+
 }
 
 #pragma mark UITableView Delegate Methods
@@ -98,6 +114,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    firstLoad = NO;
     NSDictionary *dict = [newsList objectAtIndex:[indexPath row]];
     NSString *newsLink = [dict objectForKey:@"link"];
     if (self.detailViewController == nil) {
@@ -106,6 +123,15 @@
     [self presentViewController:self.detailViewController animated:YES completion:^{
         [self.detailViewController loadNews:newsLink withDetail:dict];
     }];
+}
+
+- (void)pullToRefreshViewShouldRefresh:(PullToRefreshView *)view{
+    firstLoad = YES;
+    [self performSelectorInBackground:@selector(processNews) withObject:nil];
+}
+
+- (void)setFirstLoad{
+    firstLoad = YES;
 }
 
 @end

@@ -13,6 +13,10 @@
 		<string>圣保罗</string>
 		<key>time</key>
 		<string>2014-06-06 15:57</string>
+		<key>homeflag</key>
+		<string>http://img.fifa.com/images/flags/4/bra.png</string>
+		<key>awayflag</key>
+		<string>http://img.fifa.com/images/flags/4/cro.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -25,6 +29,10 @@
 		<string>纳塔尔</string>
 		<key>time</key>
 		<string>2014-06-14 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/mex.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/cmr.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -37,6 +45,10 @@
 		<string>萨尔瓦多</string>
 		<key>time</key>
 		<string>2014-06-14 03:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/ned.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -49,6 +61,10 @@
 		<string>库亚巴</string>
 		<key>time</key>
 		<string>2014-06-14 06:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/chi.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/aus.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -61,6 +77,10 @@
 		<string>贝洛奥里藏特</string>
 		<key>time</key>
 		<string>2014-06-15 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/col.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/gre.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -73,6 +93,10 @@
 		<string>福塔莱萨</string>
 		<key>time</key>
 		<string>2014-06-15 03:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/uru.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/crc.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -85,6 +109,10 @@
 		<string>玛瑙斯</string>
 		<key>time</key>
 		<string>2014-06-15 06:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/eng.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/ita.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -97,6 +125,10 @@
 		<string>累西腓</string>
 		<key>time</key>
 		<string>2014-06-15 09:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/civ.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/jpn.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -109,6 +141,10 @@
 		<string>巴西利亚</string>
 		<key>time</key>
 		<string>2014-06-16 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/sui.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/ecu.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -121,6 +157,10 @@
 		<string>阿雷格里港</string>
 		<key>time</key>
 		<string>2014-06-16 03:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/fra.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/hon.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -133,6 +173,10 @@
 		<string>里约热内卢</string>
 		<key>time</key>
 		<string>2014-06-16 06:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/arg.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/bih.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -145,6 +189,10 @@
 		<string>萨尔瓦多</string>
 		<key>time</key>
 		<string>2014-06-17 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/ger.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/por.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -157,6 +205,10 @@
 		<string>库里奇巴</string>
 		<key>time</key>
 		<string>2014-06-17 03:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/irn.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/nga.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -169,6 +221,10 @@
 		<string>纳塔尔</string>
 		<key>time</key>
 		<string>2014-06-17 06:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/gha.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/usa.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -181,6 +237,10 @@
 		<string>贝洛奥里藏特</string>
 		<key>time</key>
 		<string>2014-06-18 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -193,6 +253,10 @@
 		<string>福塔莱萨</string>
 		<key>time</key>
 		<string>2014-06-18 03:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -205,6 +269,10 @@
 		<string>库亚巴</string>
 		<key>time</key>
 		<string>2014-06-18 06:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -217,6 +285,10 @@
 		<string>阿雷格里港</string>
 		<key>time</key>
 		<string>2014-06-19 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -229,6 +301,10 @@
 		<string>里约热内卢</string>
 		<key>time</key>
 		<string>2014-06-19 03:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -241,6 +317,10 @@
 		<string>玛瑙斯</string>
 		<key>time</key>
 		<string>2014-06-19 06:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -253,6 +333,10 @@
 		<string>巴西利亚</string>
 		<key>time</key>
 		<string>2014-06-20 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -265,6 +349,10 @@
 		<string>圣保罗</string>
 		<key>time</key>
 		<string>2014-06-20 03:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -277,6 +365,10 @@
 		<string>纳塔尔</string>
 		<key>time</key>
 		<string>2014-06-20 06:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -289,6 +381,10 @@
 		<string>累西腓</string>
 		<key>time</key>
 		<string>2014-06-21 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -301,6 +397,10 @@
 		<string>萨尔瓦多</string>
 		<key>time</key>
 		<string>2014-06-21 03:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -313,6 +413,10 @@
 		<string>库里奇巴</string>
 		<key>time</key>
 		<string>2014-06-21 06:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -325,6 +429,10 @@
 		<string>贝洛奥里藏特</string>
 		<key>time</key>
 		<string>2014-06-22 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -337,6 +445,10 @@
 		<string>福塔莱萨</string>
 		<key>time</key>
 		<string>2014-06-22 03:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -349,6 +461,10 @@
 		<string>库亚巴</string>
 		<key>time</key>
 		<string>2014-06-22 06:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -361,6 +477,10 @@
 		<string>里约热内卢</string>
 		<key>time</key>
 		<string>2014-06-23 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -373,6 +493,10 @@
 		<string>阿雷格里港</string>
 		<key>time</key>
 		<string>2014-06-23 03:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -385,6 +509,10 @@
 		<string>玛瑙斯</string>
 		<key>time</key>
 		<string>2014-06-23 06:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -397,6 +525,10 @@
 		<string>库里奇巴</string>
 		<key>time</key>
 		<string>2014-06-24 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -409,6 +541,10 @@
 		<string>圣保罗</string>
 		<key>time</key>
 		<string>2014-06-24 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -421,6 +557,10 @@
 		<string>巴西利亚</string>
 		<key>time</key>
 		<string>2014-06-24 04:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -433,6 +573,10 @@
 		<string>累西腓</string>
 		<key>time</key>
 		<string>2014-06-24 04:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -445,6 +589,10 @@
 		<string>纳塔尔</string>
 		<key>time</key>
 		<string>2014-06-25 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -457,6 +605,10 @@
 		<string>贝洛奥里藏特</string>
 		<key>time</key>
 		<string>2014-06-25 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -469,6 +621,10 @@
 		<string>库亚巴</string>
 		<key>time</key>
 		<string>2014-06-25 04:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -481,6 +637,10 @@
 		<string>福塔莱萨</string>
 		<key>time</key>
 		<string>2014-06-25 04:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -493,6 +653,10 @@
 		<string>阿雷格里港</string>
 		<key>time</key>
 		<string>2014-06-26 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -505,6 +669,10 @@
 		<string>萨尔瓦多</string>
 		<key>time</key>
 		<string>2014-06-26 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -517,6 +685,10 @@
 		<string>玛瑙斯</string>
 		<key>time</key>
 		<string>2014-06-26 04:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -529,6 +701,10 @@
 		<string>里约热内卢</string>
 		<key>time</key>
 		<string>2014-06-26 04:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -541,6 +717,10 @@
 		<string>累西腓</string>
 		<key>time</key>
 		<string>2014-06-27 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -553,6 +733,10 @@
 		<string>巴西利亚</string>
 		<key>time</key>
 		<string>2014-06-27 00:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -565,6 +749,10 @@
 		<string>圣保罗</string>
 		<key>time</key>
 		<string>2014-06-27 04:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>
@@ -577,6 +765,10 @@
 		<string>库里奇巴</string>
 		<key>time</key>
 		<string>2014-06-27 04:00</string>
+        <key>homeflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
+        <key>awayflag</key>
+        <string>http://img.fifa.com/images/flags/4/esp.png</string>
 	</dict>
 	<dict>
 		<key>number</key>

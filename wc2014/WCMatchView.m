@@ -2,7 +2,7 @@
 //  WCMatchView.m
 //  wc2014
 //
-//  Created by lazy on 5/21/14.
+//  Created by lazy on 6/18/14.
 //  Copyright (c) 2014 lazy. All rights reserved.
 //
 
@@ -35,6 +35,7 @@
     self.VSLabel.hidden = YES;
     self.addCalendarBtn.hidden = YES;
     self.weiboSharedBtn.hidden = YES;
+    self.matchNo.hidden = YES;
     composeViewController = [[SLComposeViewController alloc] init];
 }
 
@@ -71,6 +72,15 @@
         self.VSLabel.hidden = NO;
         self.addCalendarBtn.hidden = NO;
         self.weiboSharedBtn.hidden = NO;
+        
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            NSData *homedata = [NSData dataWithContentsOfURL:[NSURL URLWithString:[matchInfo objectForKey:@"homeflag"]]];
+            NSData *awaydata = [NSData dataWithContentsOfURL:[NSURL URLWithString:[matchInfo objectForKey:@"awayflag"]]];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.homeFlag.image = [UIImage imageWithData:homedata];
+                self.awayFlag.image = [UIImage imageWithData:awaydata];
+            });
+        });
         
         identifier = [[NSUserDefaults standardUserDefaults] stringForKey:no];
         if (identifier == nil) {
